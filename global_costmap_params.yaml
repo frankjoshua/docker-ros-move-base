@@ -1,5 +1,5 @@
 global_costmap:
-  global_frame: /map
+  global_frame: map
   rolling_window: false
   static_map: true
   update_frequency: 0.5
