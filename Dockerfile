@@ -9,7 +9,7 @@ RUN apt-get update -y && \
     && \
     rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p /app/move-base
-COPY ./app /app/move-base
-WORKDIR /app/move-base
+RUN mkdir -p /app
+COPY ./app /app
+WORKDIR /app
 CMD ["roslaunch", "--wait", "ros.launch"]
